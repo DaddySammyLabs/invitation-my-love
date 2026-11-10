@@ -6,6 +6,7 @@ import {
   CalendarDays,
   Images,
   MessageCircle,
+  Shirt,
 } from "lucide-react";
 
 import styles from "./Navigation.module.css";
@@ -22,6 +23,7 @@ const navigationItems = [
   { id: "location", icon: MapPin, key: "location" },
   { id: "program", icon: CalendarDays, key: "program" },
   { id: "photos", icon: Images, key: "photos" },
+  { id: "dresscode", icon: Shirt, key: "dresscode" },
   { id: "rsvp", icon: MessageCircle, key: "rsvp" },
 ];
 

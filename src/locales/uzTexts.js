@@ -6,6 +6,7 @@ const uzTexts = {
     location: "Manzil",
     program: "Dastur",
     photos: "Rasmlar",
+    dresscode: "Dress Code",
     rsvp: "Javob",
     language: "Til",
   },
@@ -87,6 +88,74 @@ const uzTexts = {
     },
 
     footer: "Bayramni birgalikda nishonlaymiz!",
+  },
+
+  photos: {
+    eyebrow: "BIZNING XOTIRALARIMIZ",
+    title: "Suratlardagi hikoyamiz",
+    subtitle: "Abadiy saqlab qolishni istagan lahzalar",
+    openPhoto: "Suratni ochish",
+    footer: "Har bir surat — muhabbatning kichik hikoyasi",
+  },
+
+  dressCode: {
+    eyebrow: "TO'Y USLUBI",
+    title: "Kiyim uslubi",
+    subtitle:
+      "Bayramimiz muhitini birgalikda yaratishingizdan xursand bo'lamiz",
+    palette: "To'yimizning ranglar palitrasi",
+    note: "Iltimos, palitramiz ranglariga mos nafis va bayramona liboslarni tanlang.",
+    closing: "Sizning tabassumingiz — eng chiroyli bezak!",
+  },
+
+  rsvp: {
+    eyebrow: "SIZNI KUTAMIZ",
+    title: "Ishtirokingizni tasdiqlang",
+    subtitle: "Iltimos, 2027-yil 1-iyungacha javob bering",
+
+    name: "Ism va familiyangiz",
+    namePlaceholder: "Ismingizni kiriting",
+
+    attendance: "To'yimizda qatnasha olasizmi?",
+    yes: "Albatta, kelaman",
+    no: "Afsuski, kela olmayman",
+
+    guests: "Mehmonlar soni",
+    dietary: "Taom bo'yicha istaklar",
+    dietaryPlaceholder: "Masalan: vegetarian taomlar",
+
+    message: "Yosh kelin-kuyovga tilaklaringiz",
+    messagePlaceholder: "Samimiy tilaklaringizni yozing...",
+
+    submit: "Ishtirokni tasdiqlash",
+    sending: "Yuborilmoqda...",
+
+    successTitle: "Javobingiz uchun rahmat!",
+    successMessage:
+      "Javobingiz muvaffaqiyatli saqlandi. Siz bilan ushbu kunni baham ko'rishdan xursand bo'lamiz!",
+    back: "Yopish",
+
+    privacy: "Javobingiz faqat to'y tashkilotchilariga ko'rinadi.",
+
+    errors: {
+      invalidName: "Ism 2 dan 100 tagacha belgidan iborat bo'lishi kerak.",
+      invalidLength: "To'ldirilgan maydonlar uzunligini tekshiring.",
+      invalidGuests: "Mehmonlar soni noto'g'ri.",
+      submitError: "Javobni yuborib bo'lmadi. Qayta urinib ko'ring.",
+    },
+  },
+
+  footer: {
+    eyebrow: "MEHR BILAN TAKLIF QILAMIZ",
+    names: "Anna & Aleksandr",
+    date: "20 · 06 · 2027",
+    message: "Ushbu unutilmas kunni siz bilan baham ko'rishdan baxtiyormiz!",
+    playMusic: "Musiqani yoqish",
+    pauseMusic: "Musiqani o'chirish",
+    loading: "Musiqa yuklanmoqda...",
+    musicPlaying: "Musiqa ijro etilmoqda",
+    musicOff: "Musiqa o'chirilgan",
+    copyright: "Mehr bilan, kelin-kuyov",
   },
 };
 

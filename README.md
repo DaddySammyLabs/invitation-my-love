@@ -72,18 +72,31 @@ src/
 │   │   └── Program.module.css
 │   │
 │   ├── Photos/
+│   │   ├── Photos.jsx
+│   │   └── Photos.module.css
+│   │
 │   ├── DressCode/
-│   ├── RSVP/
+│   │   ├── DressCode.jsx
+│   │   └── DressCode.module.css
+│   │
+│   └── RSVP/
+│   │   ├── RSVP.jsx
+│   │   └── RSVP.module.css
+│   │
 │   ├── Footer/
 │   └── ComponentTitle/
 │
 ├── hooks/
 │   ├── useLanguage.js
+│   ├── useLightbox.js
 │   ├── useNavigation.js
 │   ├── useCountdown.js
 │   ├── useScrollAnimation.js
 │   ├── useMusic.js
 │   └── useRSVP.js
+│
+├── services/
+│   └── api.js
 │
 ├── context/
 │   └── LanguageContext.jsx

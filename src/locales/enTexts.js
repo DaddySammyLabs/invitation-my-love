@@ -6,6 +6,7 @@ const enTexts = {
     location: "Location",
     program: "Program",
     photos: "Photos",
+    dresscode: "Kiyim uslubi",
     rsvp: "RSVP",
     language: "Language",
   },
@@ -87,6 +88,74 @@ const enTexts = {
     },
 
     footer: "Let's celebrate together!",
+  },
+
+  photos: {
+    eyebrow: "OUR MEMORIES",
+    title: "Our Story in Pictures",
+    subtitle: "Moments we want to keep forever",
+    openPhoto: "Open photo",
+    footer: "Every picture tells a little love story",
+  },
+
+  dressCode: {
+    eyebrow: "WEDDING STYLE",
+    title: "Dress Code",
+    subtitle:
+      "We would love you to complement the atmosphere of our celebration",
+    palette: "Our wedding color palette",
+    note: "Please choose elegant and festive outfits inspired by our color palette.",
+    closing: "Your smiles are the best accessory!",
+  },
+
+  rsvp: {
+    eyebrow: "WE WOULD LOVE TO SEE YOU",
+    title: "Kindly RSVP",
+    subtitle: "Please respond by June 1, 2027",
+
+    name: "Your full name",
+    namePlaceholder: "Enter your name",
+
+    attendance: "Will you be attending?",
+    yes: "Happily accepts",
+    no: "Regretfully declines",
+
+    guests: "Number of guests",
+    dietary: "Dietary preferences",
+    dietaryPlaceholder: "For example: vegetarian menu",
+
+    message: "Message to the couple",
+    messagePlaceholder: "Leave us your warm wishes...",
+
+    submit: "Confirm Attendance",
+    sending: "Sending...",
+
+    successTitle: "Thank you for responding!",
+    successMessage:
+      "Your response has been successfully saved. We look forward to celebrating with you!",
+    back: "Close",
+
+    privacy: "Your response will only be accessible to the wedding organizers.",
+
+    errors: {
+      invalidName: "Please enter a name between 2 and 100 characters.",
+      invalidLength: "Please check the length of your entries.",
+      invalidGuests: "Invalid number of guests.",
+      submitError: "Unable to submit your response. Please try again.",
+    },
+  },
+
+  footer: {
+    eyebrow: "WITH LOVE, WE INVITE YOU",
+    names: "Anna & Alexander",
+    date: "20 · 06 · 2027",
+    message: "We would be delighted to share this special day with you!",
+    playMusic: "Play music",
+    pauseMusic: "Pause music",
+    loading: "Loading music...",
+    musicPlaying: "Music is playing",
+    musicOff: "Music is off",
+    copyright: "With love, the newlyweds",
   },
 };
 

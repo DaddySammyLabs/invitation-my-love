@@ -1,0 +1,246 @@
+.rsvp {
+  padding: var(--section-padding);
+  background: var(--color-ivory);
+
+  opacity: 0;
+  transform: translateY(35px);
+
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 600px;
+  margin: 45px auto 0;
+  padding: 45px;
+
+  background: #fffaf5;
+  border: 1px solid rgba(112, 43, 56, 0.12);
+  border-radius: 10px;
+
+  box-shadow: 0 15px 45px rgba(112, 43, 56, 0.06);
+}
+
+.heart {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  color: var(--color-burgundy);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field label,
+.attendance legend {
+  font-family: var(--font-heading);
+  font-size: 19px;
+  color: var(--color-burgundy);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 14px 15px;
+
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-text);
+
+  background: white;
+  border: 1px solid rgba(112, 43, 56, 0.2);
+  border-radius: 5px;
+
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--color-burgundy);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.attendance {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  padding: 0;
+  border: none;
+}
+
+.attendance legend {
+  margin-bottom: 12px;
+}
+
+.radioOption {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-text);
+
+  cursor: pointer;
+}
+
+.radioOption input {
+  accent-color: var(--color-burgundy);
+  width: 17px;
+  height: 17px;
+}
+
+.submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  width: 100%;
+  min-height: 52px;
+  padding: 14px;
+
+  color: white;
+  background: var(--color-burgundy);
+  border: 1px solid var(--color-burgundy);
+  border-radius: 5px;
+
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: var(--color-wine);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.privacy {
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.7;
+  color: var(--color-muted);
+}
+
+.error {
+  padding: 12px;
+  border-radius: 5px;
+
+  background: #fbe8e8;
+  color: #9c3030;
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 30px 10px;
+  text-align: center;
+
+  color: var(--color-burgundy);
+}
+
+.success h3 {
+  margin-top: 25px;
+
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.success p {
+  max-width: 400px;
+  margin-top: 15px;
+
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--color-muted);
+}
+
+.resetButton {
+  margin-top: 25px;
+  padding: 12px 25px;
+
+  color: white;
+  background: var(--color-burgundy);
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submitButton:focus-visible,
+.resetButton:focus-visible {
+  outline: 2px solid var(--color-wine);
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 30px 20px;
+    margin-top: 35px;
+  }
+
+  .field label,
+  .attendance legend {
+    font-size: 17px;
+  }
+
+  .success h3 {
+    font-size: 27px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rsvp {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
