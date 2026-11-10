@@ -1,14 +1,14 @@
-import { Heart, Music2, Pause, Play, Flower2 } from "lucide-react";
+import { Heart, Pause, Play, Flower2 } from "lucide-react";
 
 import useLanguage from "../../hooks/useLanguage";
-import useMusic from "../../hooks/useMusic";
+import { useApp } from "@/context/AppContext";
 
 import styles from "./Footer.module.css";
 
 function Footer() {
   const { t } = useLanguage();
 
-  const { isPlaying, isLoading, toggleMusic } = useMusic();
+  const { togglePlaySong, isPlaying } = useApp();
 
   return (
     <footer className={styles.footer} id="footer">
@@ -29,36 +29,13 @@ function Footer() {
 
         <p className={styles.message}>{t.footer.message}</p>
 
-        {/* <div className={styles.musicWrapper}>
-          <button
-            type="button"
-            className={`${styles.musicButton} ${
-              isPlaying ? styles.musicPlaying : ""
-            }`}
-            onClick={toggleMusic}
-            disabled={isLoading}
-            aria-label={isPlaying ? t.footer.pauseMusic : t.footer.playMusic}
-            aria-pressed={isPlaying}
-          >
-            {isPlaying ? <Pause size={19} /> : <Play size={19} />}
-          </button>
-
-          <span className={styles.musicText}>
-            {isLoading
-              ? t.footer.loading
-              : isPlaying
-                ? t.footer.musicPlaying
-                : t.footer.musicOff}
-          </span>
-        </div> */}
         <div className={styles.musicWrapper}>
           <button
             type="button"
             className={`${styles.musicButton} ${
               isPlaying ? styles.musicPlaying : ""
             }`}
-            onClick={toggleMusic}
-            disabled={isLoading}
+            onClick={togglePlaySong}
             aria-label={isPlaying ? t.footer.pauseMusic : t.footer.playMusic}
             aria-pressed={isPlaying}
           >
