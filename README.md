@@ -13,6 +13,8 @@ Repository: [GitHub repository URL](https://github.com/DaddySammyLabs/invitation
 ![Invitation Welcome](src/assets/images/my_love_invitation.png)
 
 ![Mobile Invitation Website](src/assets/images/my_love_inv_mobile.png)
+![Mobile Invitation Website](src/assets/images/my_love_mobile_dresscode.png)
+![Mobile Invitation Website](src/assets/images/my_love_photos.png)
 
 ## 📱 Mobile App
 

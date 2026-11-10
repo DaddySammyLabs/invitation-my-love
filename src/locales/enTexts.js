@@ -6,7 +6,7 @@ const enTexts = {
     location: "Location",
     program: "Program",
     photos: "Photos",
-    dresscode: "Kiyim uslubi",
+    dresscode: "Dress Code",
     rsvp: "RSVP",
     language: "Language",
   },

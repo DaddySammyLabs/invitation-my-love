@@ -6,7 +6,7 @@ const uzTexts = {
     location: "Manzil",
     program: "Dastur",
     photos: "Rasmlar",
-    dresscode: "Dress Code",
+    dresscode: "Kiyim uslubi",
     rsvp: "Javob",
     language: "Til",
   },
