@@ -10,10 +10,9 @@ Repository: [GitHub repository URL](https://github.com/DaddySammyLabs/invitation
 
 ## 📸 Preview
 
-![Invitation Welcome](src/assets/images/classic_hero.png)
-![Date Section](src/assets/images/classic_home.png)
+![Invitation Welcome](src/assets/images/my_love_invitation.png)
 
-![Mobile Invitation Website](src/assets/images/classic_mobile.png)
+![Mobile Invitation Website](src/assets/images/my_love_inv_mobile.png)
 
 ## 📱 Mobile App
 
@@ -80,6 +79,9 @@ src/
 │   ├── useMusic.js
 │   └── useRSVP.js
 │
+├── context/
+│   └── LanguageContext.jsx
+│
 ├── locales/
 │   ├── texts.js
 │   ├── enTexts.js
@@ -94,6 +96,22 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── index.css
+
+Hero - invitation-block
+
+src/
+├── components/
+│   ├── Hero/
+│   │   ├── Hero.jsx
+│   │   └── Hero.module.css
+│   │
+│   └── Navigation/
+│       ├── Navigation.jsx
+│       └── Navigation.module.css
+│
+└── hooks/
+    └── useNavigation.js
+
 ```
 
 ## 🌐 Multilingual Support

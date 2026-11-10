@@ -1,0 +1,161 @@
+.trigger {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  padding: 8px 4px;
+
+  color: var(--color-burgundy);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.trigger span {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(35, 20, 23, 0.5);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  overflow-y: auto;
+}
+
+.modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 380px;
+  max-height: calc(100dvh - 40px);
+
+  padding: 35px 25px;
+
+  overflow-y: auto;
+  overscroll-behavior: contain;
+
+  background: var(--color-ivory);
+  border: 1px solid var(--color-beige);
+  border-radius: 18px;
+
+  box-shadow: 0 20px 60px rgba(50, 20, 25, 0.15);
+
+  animation: appear 0.3s ease;
+}
+
+.modal h2 {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--color-burgundy);
+}
+
+.modal > p {
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--color-muted);
+}
+
+.close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  display: grid;
+  place-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  color: var(--color-burgundy);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 25px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 48px;
+  padding: 14px 16px;
+
+  color: var(--color-burgundy);
+  background: white;
+  border: 1px solid var(--color-beige);
+  border-radius: 9px;
+
+  font-size: 13px;
+  cursor: pointer;
+
+  transition: var(--transition);
+}
+
+.option:hover,
+.selected {
+  background: var(--color-beige);
+  border-color: var(--color-burgundy);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay {
+    padding: 12px;
+  }
+
+  .modal {
+    max-height: calc(100dvh - 24px);
+    padding: 32px 20px;
+  }
+
+  .modal h2 {
+    font-size: 27px;
+  }
+}
+
+@media (max-height: 500px) {
+  .overlay {
+    align-items: flex-start;
+  }
+
+  .modal {
+    margin-block: auto;
+  }
+}
