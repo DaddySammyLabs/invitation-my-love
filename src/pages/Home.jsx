@@ -1,0 +1,35 @@
+import styles from "./Home.module.css";
+
+// Components
+import Navigation from "../components/Navigation/Navigation";
+import Hero from "../components/Hero/Hero";
+import Invitation from "../components/Invitation/Invitation";
+import Timer from "../components/Timer/Timer";
+import Location from "../components/Location/Location";
+import Program from "../components/Program/Program";
+import Photos from "../components/Photos/Photos";
+import DressCode from "../components/DressCode/DressCode";
+import RSVP from "../components/RSVP/RSVP";
+import Footer from "../components/Footer/Footer";
+
+function Home() {
+  return (
+    <div className={styles.home}>
+      <main className={styles.main}>
+        <Hero />
+        <Invitation />
+        <Timer />
+        <Location />
+        <Program />
+        <Photos />
+        <DressCode />
+        <RSVP />
+        <Footer />
+      </main>
+
+      <Navigation />
+    </div>
+  );
+}
+
+export default Home;

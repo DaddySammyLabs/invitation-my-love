@@ -1,0 +1,12 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  overflow: clip;
+  background: var(--color-ivory);
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: calc(76px + env(safe-area-inset-bottom));
+}
