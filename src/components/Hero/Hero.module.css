@@ -20,7 +20,7 @@
   object-fit: cover;
   object-position: center 40%;
   transform: scale(1);
-  animation: heroZoom 22s ease-in-out infinite alternate;
+  animation: heroZoom 7s ease-in-out infinite alternate;
 }
 
 @keyframes heroZoom {
@@ -205,6 +205,6 @@
   }
 
   .image {
-    transform: scale(1.05);
+    transform: scale(1.07);
   }
 }

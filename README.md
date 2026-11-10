@@ -1,4 +1,4 @@
-# Classic Wedding Invitation Website 💍
+# Elegant and Beautiful Wedding Invitation Website 💍
 
 A _modern_ and _elegant_ wedding invitation website built with React. The application provides a beautiful digital invitation where guests can explore wedding details, view the event schedule, find the venue, and confirm their attendance.
 
@@ -64,7 +64,13 @@ src/
 │   ├── Invitation/
 │   ├── Timer/
 │   ├── Location/
-│   ├── Program/
+│   │   ├── Location.jsx
+│   │   └── Location.module.css
+│   │
+│   └── Program/
+│   │   ├── Program.jsx
+│   │   └── Program.module.css
+│   │
 │   ├── Photos/
 │   ├── DressCode/
 │   ├── RSVP/

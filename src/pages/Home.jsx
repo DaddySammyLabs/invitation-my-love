@@ -3,6 +3,9 @@ import styles from "./Home.module.css";
 import Navigation from "../components/Navigation/Navigation";
 import Hero from "../components/Hero/Hero";
 import Invitation from "../components/Invitation/Invitation";
+import Timer from "../components/Timer/Timer";
+import Location from "../components/Location/Location";
+import Program from "../components/Program/Program";
 
 function Home() {
   return (
@@ -10,6 +13,9 @@ function Home() {
       <main className={styles.main}>
         <Hero />
         <Invitation />
+        <Timer />
+        <Location />
+        <Program />
       </main>
 
       <Navigation />
